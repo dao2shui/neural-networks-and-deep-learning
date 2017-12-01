@@ -23,7 +23,7 @@ import numpy as np
 
 #### Define the quadratic and cross-entropy cost functions
 
-class QuadraticCost(object):
+class QuadraticCost(object):     #二次代价函数误差
 
     @staticmethod
     def fn(a, y):
@@ -39,7 +39,7 @@ class QuadraticCost(object):
         return (a-y) * sigmoid_prime(z)
 
 
-class CrossEntropyCost(object):
+class CrossEntropyCost(object):    #使用交叉熵代价函数
 
     @staticmethod
     def fn(a, y):

@@ -45,7 +45,7 @@ net.SGD(training_data, 400, 10, 0.5, evaluation_data=test_data, lmbda=5,
         monitor_training_cost=True, monitor_training_accuracy=True)
 # Accuracy on evaluation data: 9672 / 10000
 
-# 测试5，3层网络，初始输入为784个神经元，30个隐藏神经元，10个输出神经元，使用均值为0标准差为1/squat(len(in))的高斯分布，
+# 测试5，3层网络，初始输入为784个神经元，30个隐藏神经元，10个输出神经元，使用均值为0标准差为1/sqrt(len(in))的高斯分布，
 # 加入正则化
 net = network2.Network([784, 30, 10], cost=network2.CrossEntropyCost)
 # 30次迭代期，小批量数据为10，学习率为0.5，正则化参数为0.1,使用validation数据集
